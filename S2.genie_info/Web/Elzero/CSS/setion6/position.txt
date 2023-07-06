@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+    <div class="two">two</div>
+    <div class="parent">
+        <div class="one">one</div>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed dolor illum tempore distinctio architecto cum laborum, dolores in quo excepturi esse aliquam, voluptas illo nisi unde odit quibusdam labore.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed dolor illum tempore distinctio architecto cum laborum, dolores in quo excepturi esse aliquam, voluptas illo nisi unde odit quibusdam labore.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed dolor illum tempore distinctio architecto cum laborum, dolores in quo excepturi esse aliquam, voluptas illo nisi unde odit quibusdam labore.
+    </p>
+    <div class="scroll">
+        Sticky scroll
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed dolor illum tempore distinctio architecto cum laborum, dolores in quo excepturi esse aliquam, voluptas illo nisi unde odit quibusdam labore.
+    </p> 
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed dolor illum tempore distinctio architecto cum laborum, dolores in quo excepturi esse aliquam, voluptas illo nisi unde odit quibusdam labore.
+    </p> 
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed dolor illum tempore distinctio architecto cum laborum, dolores in quo excepturi esse aliquam, voluptas illo nisi unde odit quibusdam labore.
+    </p> 
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed dolor illum tempore distinctio architecto cum laborum, dolores in quo excepturi esse aliquam, voluptas illo nisi unde odit quibusdam labore.
+    </p>
+</body>
+</html>
+
+div {
+    text-transform: capitalize;
+    color: white;
+    width: 100px;
+    padding: 10px;
+}
+
+.one {
+    background-color: red;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.two {
+    background-color: green;
+}
+
+.parent {
+    width: 500px;
+    background-color: blue;
+    height: 300px;
+    position: relative;
+}
+
+body {
+    min-height: 6000px;
+}
+
+.scroll {
+    background-color: gray;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top: 20px;
+}
+
+Position : 
+    static => default;
+    relative => it's relative to his initial position;
+    absolute => makes the element out of the flow or page and his relative position is 
+                the page itself or the parent element but this parent element have to 
+                take the relative position to that it will be relative to the element 
+                thet we want change his position ok ?;
+    fixed => fixed position;
+    stycky => it still scroll until down of the page with setting the position;

@@ -1,0 +1,102 @@
+
+introduction : 
+<!--
+    CSS => Cascade style sheet;
+    CSS have levels ;
+
+    selector => element that i wanna to aply on it my style changes;
+    {} => called curly brackets;
+
+    Css Syntax;
+
+    selector {
+        Proprety : value ; => declaration
+    }
+
+    class in css => ."name";
+    id => #"name" but it's preferable to use class; 
+-->
+
+elements styling : 
+
+<!-- 
+        how to style elements :
+        -External style;
+        -Internal style : 
+            <style>
+
+            </style>
+        -inline style :
+            using stytle as attribute;
+            <p style="color :red"></p>
+            
+    inline style > others but he's not the best; or always the last; 
+-->
+
+Name Conventions And Rules :
+
+<!--
+
+    class and id are identifirs ;
+        id cannot start with a number;
+        between name we use "-"
+        Proprety: value ; (space between column and value); 
+-->
+
+Background Color, Image, Repeat
+
+
+<!-- 
+    Background Color :
+    to use background color we can set color by name but their is a lot pf colores
+    without name so we can use :
+    rgb(red, green, blue) its a function that every one can take value between 0 and 255;
+        rgb(255,255,255) => white color;
+        rgb(0,0,0) => black color;
+        then the last is the alpha channel it text value by "%", The alpha channel 
+        controls the transparency or opacity of a color. 
+
+            rgba(R,G,B / Alpha channel) declaration function; alpa chanel is by %
+                (alpha channel == opacity)
+
+            Hex code :
+                #RR GG BB =>  takes from 0 -> FF by hexa
+
+            HSL code : 
+                hsl(x°"degress",%"saturation",%"lightness")
+
+        
+    Background image :
+        background-image: url(""); we put the background image link inside the url;
+        background-repeat => sets the number of repeat its defualt is repeat but 
+                            we can set "no-repeat" to that it can be once , 
+                            or (repeat-x) repeat horizontally , (repeat-y)
+                            Repeat vertically; 
+-->
+
+Background  Attachment, Position, Size
+
+<!-- 
+    background-attachment => The background-attachment property is used to specify 
+        that the background image is fixed or scroll with the rest of the page in 
+        the browser window.it's default value is "scroll" abd we can use 
+        "fixed" to that it can fix in it's position.
+
+    background-position => The background-position we can split the screen into 9 
+        squares (columns="left,center,right" and lines="top,center,bottom"); 
+        default is center;
+
+        by px/% : background-position : "left" px/% "top" px/%; 
+
+    background-size : specifies the size of the background images, it's default 
+        value is auto that keep it in it's original size, but we can use "cover"
+        Resize the background image to cover the entire container, even if it 
+        has to stretch the image or cut a little bit off one of the edges, and "contain"
+        Resize the background image to make sure the image is fully visible;
+        and we can use hight and width to specify the size of the background image
+        "width" then "height" when we make it 100% in eich one of them it stretch;  
+-->
+
+
+
+    

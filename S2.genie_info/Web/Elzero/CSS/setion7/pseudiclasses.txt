@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one">
+        normal elements 
+    </div>
+    <hr>
+    <div class="two"></div>
+    <hr>
+    <a href="#">link 1</a>
+    <a href="#">link 2</a>
+    <hr>
+    <form action="">
+        <div>
+            <input class="text type="text">
+        </div>
+        <div>
+            <input class="ch" type="checkbox">
+            <label for="">tasting check</label>
+        </div>
+    </form>    
+</body>
+</html>
+
+* {
+    text-transform: capitalize;
+}
+
+.one {
+    background-color: red ;
+    color: white;
+}
+
+.two {
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    color: green;
+    text-decoration: none; 
+}
+
+a:hover {
+    color: red;
+}
+
+.ch:checked {
+    display: none;
+} 
+
+a:visited {
+    color: blue;
+}
+
+div:empty {
+    border: 10px solid brown;
+}
+
+.text {
+    border: 2px solid black;
+}
+
+.text:focus {
+    border-color: yellow;
+    outline: none;
+}
+
+psedu classes we can say that they are feke classes ;
+there is a lot like "focus, hover, checked, empty, visited...."

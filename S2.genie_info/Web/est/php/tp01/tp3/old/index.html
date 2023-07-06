@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gestion d'absences</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Gestion d'absences</h1>
+
+    <h2>Inscription d'étudiant</h2>
+    <form method="post" action="main.php">
+        <label>Nom:</label>
+        <input type="text" name="last_name" required><br>
+
+        <label>Prénom:</label>
+        <input type="text" name="first_name" required><br>
+
+        <label>Type d'absence:</label>
+        <input type="text" name="absence_type" required><br>
+
+        <label>Module:</label>
+        <select name="module_id">
+            <option value="1">Module 1</option>
+            <option value="2">Module 2</option>
+            <option value="3">Module 3</option>
+        </select><br>
+
+        <input type="submit" value="Enregistrer">
+    </form>
+
+    <h2>Inscription de module</h2>
+    <form method="post" action="main.php">
+        <label>Intitulé:</label>
+        <input type="text" name="module_name" required><br>
+
+        <input type="submit" value="Enregistrer">
+    </form>
+
+    <h2>Liste des étudiants par module</h2>
+    <form method="post" action="list_students.php" target="_blank">
+        <label>Module:</label>
+        <select name="module_id">
+            <option value="1">Module 1</option>
+            <option value="2">Module 2</option>
+            <option value="3">Module 3</option>
+        </select><br>
+
+        <input type="submit" value="Afficher">
+    </form>
+    <a href="list_students.php" target="_blank">Afficher la liste des étudiants</a>
+
+    <h2>Bilan d'absences</h2>
+    <?php include 'bilan_absences.php'; ?>
+</body>
+
+</html>

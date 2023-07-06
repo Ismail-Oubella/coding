@@ -1,0 +1,6 @@
+table ,thead,tbody,td{
+    border: 1px black solid;
+    border-collapse: collapse;
+    text-align: center;
+    width: 930px;
+}

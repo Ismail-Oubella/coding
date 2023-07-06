@@ -1,0 +1,13 @@
+a {
+    background-color: rgba(0,150,136,255);
+    color: white;
+    display: inline-block;
+    width: 5%;
+    padding: 30px;
+    margin: 20px auto;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    height: 10px;
+    border-bottom: 10px solid rgba(0,81,74,255);
+}

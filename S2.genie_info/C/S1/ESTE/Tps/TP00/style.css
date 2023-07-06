@@ -1,0 +1,34 @@
+table , th, td{
+    border : 1px solid black;
+    border-collapse: collapse;
+    background-color: aliceblue;
+    margin: 100px ;
+}
+
+th {
+    background-color : red;
+}
+
+div {
+    background-color : aliceblue;
+    padding: 200px;
+    color: black;
+}
+
+span {
+    font-style: oblique;
+}
+
+.new{
+    background-color : tomato;
+    border: 2px solid black;
+    margin : 20px;
+    padding : 20px;
+    font-display: swap;
+}
+
+#logo {
+    forced-color-adjust: none;
+    height: 92px;
+    width: 272px;
+}

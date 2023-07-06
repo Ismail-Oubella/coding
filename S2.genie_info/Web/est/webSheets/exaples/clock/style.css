@@ -1,0 +1,72 @@
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: monospace;
+  color: rgb(221, 255, 176);
+}
+body {
+  background-color: darkcyan;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  box-shadow: 0 0 21px rgb(72, 230, 206);
+  width: 280px;
+  height: 280px;
+  border: 1px solid;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 15%;
+  position: relative;
+  background-color: rgb(221, 255, 176);
+}
+
+
+.seconds,
+.minutes,
+.hours {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  transform: translate(-50%, -100%);
+}
+
+.seconds {
+  border: 1px solid red;
+  height: 45%;
+  width: 1px;
+  background-color: red;
+}
+
+.minutes {
+  border: 1px solid black;
+  height: 30%;
+  width: 2px;
+  background-color: black;
+}
+.hours {
+  border: 1px solid black;
+  height: 20%;
+  width: 3px;
+  background-color: black;
+}
+
+img {
+  width: 280px;
+  height: 280px;
+}
+ 
+.remover {
+    border: 1px ;
+    width: 39px;
+    height: 25px;
+    background-color: darkcyan;
+    position: absolute;
+    top: 252px;
+    left: 3px;
+    border-radius: 50%;
+
+
+}

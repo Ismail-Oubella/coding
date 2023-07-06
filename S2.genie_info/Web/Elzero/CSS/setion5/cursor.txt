@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#">Google</a>
+     <span>Test</span>
+     <button>Click</button>
+     <hr>
+     <p>Test P</p>
+     <p>Test P</p>
+     <p>Test P</p>
+</body>
+</html>
+
+
+button {
+    background: transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p {
+    cursor:copy;
+}
+
+Mouse Cursor : it's identified by Cursor attribute;

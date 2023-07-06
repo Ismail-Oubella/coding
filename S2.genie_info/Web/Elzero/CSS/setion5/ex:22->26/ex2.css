@@ -1,0 +1,19 @@
+div {
+    text-align: center;
+    margin: 50px ;
+    text-transform: capitalize;
+}
+
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cairo {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+}
+
+.Jomhuria {
+    font-family: 'Jomhuria', cursive;
+}
+

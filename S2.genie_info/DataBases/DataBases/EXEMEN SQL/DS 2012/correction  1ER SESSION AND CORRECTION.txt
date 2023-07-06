@@ -1,0 +1,162 @@
+CREATE TABLE employee1(
+NOEMP   NUMBER(10)
+CONSTRAINT  EMP_NOEMP_NN NOT NULL,
+NOM    VARCHAR2(30),
+PRENOM  VARCHAR2(30),
+NOSUP    NUMBER(30),
+TITRE      VARCHAR2(10),
+DATE_EMBAUCHE  DATE,
+NODEPT  NUMBER(20),
+TX_COMMISSION    NUMBER(10,2),
+SALAIRE      NUMBER(10),
+CONSTRAINT EMP_NOEMP_PK PRIMARY KEY(NOEMP));
+-----------------------------------------------------------------------------------------
+
+INSERT INTO employee1
+VALUES(2,'zeublouze','agathe',1,'dir.distrib',04/15/200,41,35000.00,);
+INSERT INTO employee1
+VALUES(3,'locale','adh',1,'dir.vente',31,34000.00,);
+
+INSERT INTO employee1
+VALUES(4,'Patamob','adhemar',,'dir.administre',10,36000.00,);
+
+INSERT INTO employee1
+VALUES(5,'zoudanlkou','armand',1,'chef enterpot',40,3500.00,25);
+
+INSERT INTO employee1
+VALUES(6,'karkour','chaima',2,'representent',41,26000.00,10);
+
+INSERT INTO employee1
+VALUES(2,'zeublouze','agathe',1,'dr.distrib',to_date('05-feb-2010','dd-mon-yyyy'),41,'',35000.00);
+--------------------------------------------------------------------------------------------------------------------------------------
+select e.last_name,d.department_name
+from employees e,departments d
+where e.department_id=d.department_id
+AND e.last_name='Vargas';
+--------------------------------------------------------------------------------------------
+SELECT LAST_NAME,JOB_ID,DEPARTMENT_ID
+FROM EMPLOYEES
+WHERE JOB_ID IN('AD_PRES','AD_VP');
+-------------------------------------------------------------------------------------------
+SELECT E.LAST_NAME
+FROM EMPLOYEES E,DEPARTMENTS D
+WHERE E.DEPARTMENT_ID=D.DEPARTMENT_ID
+AND D.DEPARTMENT_NAME='Shipping';
+-----------------------------------------------------------------------------------
+select LAST_NAME,salary
+from employees
+where salary>(select  salary
+             from employees
+          where LAST_NAME='King');
+------------------------------------------------------------------------------------------------------
+select LAST_NAME
+from employees
+where  LAST_NAME LIKE 'H%' AND LAST_NAME LIKE '%n';
+---------------------------------------------------------------------------------------------------
+select LAST_NAME,FIRST_NAME
+from employees
+where  JOB_ID=(SELECT JOB_ID
+               FROM EMPLOYEES
+               WHERE LAST_NAME='Rajs');
+----------------------------------------------------------------------------------------------------------
+select LAST_NAME,job_id,salary
+FROM employees
+where  salary=(SELECT salary
+               FROM employees
+               WHERE LAST_NAME='Kochhar')
+AND job_id=(SELECT job_id
+               FROM employees
+               WHERE LAST_NAME='Kochhar');
+---------------------------------------------------------------------------------------------------------------------------
+select LAST_NAME,job_id
+FROM employees
+where LAST_NAME like '__u%';
+
+------------------------------------------------------------------------------------------------------------
+select LAST_NAME,SALARY,DEPARTMENT_ID
+from employees
+where  salary>all(SELECT SALARY
+FROM EMPLOYEES
+WHERE DEPARTMENT_ID=50)
+order by DEPARTMENT_ID,salary;
+--------------------------------------------------------------------------------------------------------------------
+select LAST_NAME,SALARY,DEPARTMENT_ID
+from employees
+where  salary>any(SELECT SALARY
+FROM EMPLOYEES
+WHERE DEPARTMENT_ID=50)
+order by DEPARTMENT_ID,salary;
+--------------------------------------------------------------------------------------------------------------------
+select NOM,FONCTION
+from employe
+where SERNO=40
+AND FONCTION IN(SELECT FONCTION
+from employe
+where SERNO=10);
+-----------------------------------------------------------------------------------------------------
+select JOB_ID,AVG(SALARY)
+from employees
+group by JOB_ID
+HAVING AVG(SALARY) >(SELECT AVG(SALARY)
+                    from employees
+                     WHERE JOB_ID='AD_PRES');
+-----------------------------------------------------------------------------------------------------------
+
+select JOB_ID,LAST_NAME
+from employees
+WHERE DEPARTMENT_ID=90
+AND JOB_ID <> ALL(SELECT JOB_ID
+                  FROM employees
+                  WHERE DEPARTMENT_ID=50);
+------------------------------------------------------------------------------------------------------------------
+SELECT MAX(SALARY),STDDEV(SALARY)
+FROM EMPLOYEES;
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

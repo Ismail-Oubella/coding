@@ -1,0 +1,21 @@
+div {
+    background-color: rgba(128,128,128,0.3);
+    padding: 15px;
+    margin:20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.gg1 {
+    border-left : 5px solid #e91e63;
+    outline: 10px solid rgba(128,128,128,0.3);
+}
+
+.gg2{
+    visibility: hidden;
+}
+
+.gg3 {
+    border-left : 5px solid green;
+    outline: 10px solid rgba(128,128,128,0.3);
+}

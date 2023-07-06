@@ -1,0 +1,11 @@
+/*
+    The !Important Declaration
+*/
+
+.one {
+    background-color: #eee !important; /*this proprety overwrite on every other style that changes the background color of the one element*/
+}
+
+.one{
+    background-color: blue;
+}

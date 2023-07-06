@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .one {
+            background-color: red;
+            color: white;
+        }
+
+        .two {
+            background-color: #eee;
+            width: 100px;
+            height: 100px;
+        }
+
+        a {
+            color: green;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .ch:checked+label {
+            color: red;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        /* :empty{      
+    border: 10px solid red; 
+} 
+*/
+
+        p {
+            background-color: #eee;
+            width: 100px;
+            height: 100px;
+        }
+
+        .in {
+            border: 2px solid black;
+        }
+
+        .in:focus {
+            border-color: red;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        normal elements
+    </div>
+    <hr>
+    <div class="two"></div>
+    <p></p>
+    <hr>
+    <a href="https://www.youtube.com">link 1</a>
+    <a href="https://www.google.com">link 2</a>
+    <a href="https://www.facebook.com">link 3</a>
+    <a href="https://www.twitter.com">link 4</a>
+    <hr>
+    <form action="">
+        <div>
+            <input class="in" type="text">
+        </div>
+        <div>
+            <input class="ch" type="checkbox">
+            <label for="">tasting check</label>
+        </div>
+    </form>
+</body>
+
+</html>

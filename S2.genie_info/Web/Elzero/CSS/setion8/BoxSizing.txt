@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /*
+    The box Model
+    Box Sizing: The box-sizing CSS property sets how the total width and height of an element is calculated.
+        whatever we changes margin and padding the width and hight seted before stays always fix;
+*/
+
+        .parent {
+            width: 600px;
+            overflow: hidden;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ddd;
+        }
+
+        .one {
+            background-color: #eee;
+            width: 300px;
+            float: left;
+            border: 10px solid red;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="one">One</div>
+        <div class="one">One</div>
+    </div>
+</body>
+
+</html>

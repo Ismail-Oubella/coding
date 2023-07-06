@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="parent">
+            <div>product one</div>
+            <div>product two</div>
+            <div>product three</div>
+            <div>product four</div>
+            <p class="clear"></p>
+        </div>
+        <p>This is p for testing Float</p>
+    </body>
+</html>
+
+*{
+    text-transform: capitalize;
+}
+
+.parent {
+    background-color: red ;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.parent div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    width: 100%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+
+Float and Clear : 
+    after float we have to set the clear property;

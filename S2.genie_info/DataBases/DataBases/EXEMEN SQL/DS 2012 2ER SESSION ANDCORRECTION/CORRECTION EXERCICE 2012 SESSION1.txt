@@ -1,0 +1,140 @@
+CREATE TABLE employe(
+EMNO   NUMBER(10)
+CONSTRAINT  EMP_EMNO_NN NOT NULL,
+NOM    VARCHAR2(30),
+PRENOM  VARCHAR2(30),
+FONCTION    VARCHAR2(30),
+CHEF      NUMBER(10),
+DATE_EMBAUCHE  DATE,
+SALAIRE    NUMBER(20),
+COMMISION    NUMBER(10),
+SERNO       NUMBER(10),
+CONSTRAINT EMP_EMNO_PK PRIMARY KEY(EMNO));
+------------------------------------------------------
+CREATE TABLE SERVICE(
+SERNO       NUMBER(10)
+CONSTRAINT  SERVICE_EERNO_NN NOT NULL,
+NOMS   VARCHAR2(30),
+LIEU  VARCHAR2(30),
+CONSTRAINT  SERVICE_EERNO_PK PRIMARY KEY(SERNO));
+----------------------------------------------------
+INSERT INTO SERVICE
+VALUES(60,'AFFAIRE GENERALE','BENIMELAL');
+---------------------------------------------------------------------------------------------------------------
+ALTER TABLE EMPLOYE
+ ADD (CONSTRAINT  EMP_SERNO_FK FOREIGN KEY(SERNO)REFERENCES SERVICE(SERNO));
+--------------------------------------------------------------------------------------------------------
+INSERT INTO employe
+VALUES(7382,'YOUSSOFI','LEILA','VENDURE',7904,TO_DATE('25-FEB-2014','DD-MON-YYYY'),6000,100,10);
+----------------------------------------------------------------------------------------------------------
+SELECT NOM,SALAIRE,COMMISION,SALAIRE+COMMISION
+FROM EMPLOYE
+WHERE FONCTION='VENDURE';
+-----------------------------------------------------------------------------------------------------------
+SELECT NOM
+FROM EMPLOYE
+WHERE FONCTION='VENDURE' AND
+COMMISION<SALAIRE*0.25;
+----------------------------------------------------------------------------------------------------------
+SELECT COUNT(*)
+FROM EMPLOYE
+WHERE COMMISION IS NOT NULL;
+-------------------------------------------------------------------------------------------------------
+SELECT COUNT(DISTINCT(FONCTION))
+FROM EMPLOYE;
+---------------------------------------------------------------------------------------------------------
+SELECT AVG(SALAIRE),FONCTION
+FROM EMPLOYE
+GROUP BY FONCTION;
+------------------------------------------------------------------------------------
+SELECT SUM(E.SALAIRE)
+FROM EMPLOYE E,SERVICE S
+WHERE E.SERNO=S.SERNO
+ AND S.NOMS='VENTE';
+--------------------------------------------------------------------------------------------------
+SELECT E.NOM,S.NOMS
+FROM EMPLOYE E,SERVICE S
+WHERE E.SERNO=S.SERNO;
+------------------------------------------------------------------------------------------
+SELECT NOM 
+FROM EMPLOYE
+WHERE FONCTION=ALL(
+SELECT FONCTION 
+FROM EMPLOYE 
+WHERE NOM='MOHAMED');
+-----------------------------------------------------------------------------------------------------------
+SELECT NOM 
+FROM EMPLOYE
+WHERE CHEF=ALL(
+SELECT CHEF 
+FROM EMPLOYE 
+WHERE NOM='MOHAMED');
+-------------------------------------------------------------------------------------------
+SELECT NOM 
+FROM EMPLOYE
+WHERE DATE_EMBAUCHE<ALL(
+SELECT DATE_EMBAUCHE
+FROM EMPLOYE 
+WHERE SERNO=10);
+-------------------------------------------------------------------------------------------
+SELECT NOM 
+FROM EMPLOYE
+WHERE NOM like'%A';
+-------------------------------------------------------------------------------------------
+SELECT NOM 
+FROM EMPLOYE
+WHERE (TO_CHAR(DATE_EMBAUCHE,'DD') BETWEEN 16 AND 23);
+-------------------------------------------------------------------------------------------
+UPDATE EMPLOYE
+SET SALAIRE=SALAIRE*0.10
+WHERE FONCTION='VENDURE'
+AND COMMISION>SALAIRE*0.50;
+-------------------------------------------------------------------------------------------
+UPDATE SERVICE 
+SET LIEU='SAFI'
+WHERE NOMS='VENTE' AND LIEU='FES';
+--------------------------------------------------------------------------------------------
+
+DELETE FROM SERVICE  
+WHERE SERNO=20; 
+=DANS CE CAS ON PEUT PAS SUPPRIMEE CETTE LIGNE AU NIVEAUX DE CETTE TABLE PRCEQUE SE SERNO EST UN CLE PRIMAIRE DE CETTE TABLE ET CLE ETRANGER DANS L'AUTRE TABLE 
+POUR LE FAIT DOIT D'ABORDE SUPPRIMEE OU BIEN DESACTIVIEE LA CONTRAINT EN UTILISE LA REQUITE SUIVANT
+
+ALTER TABLE  SERVICE
+DISABLE  CONSTRAINT SERVICE_EERNO_PK CASCADE;
+-------------------------------------------------------------------------------------------
+SELECT M.LAST_NAME MANGER,E.LAST_NAME,E.DEPARTMENT_ID,M.DEPARTMENT_ID
+FROM EMPLOYEES E,EMPLOYEES M
+WHERE  E.MANAGER_ID=M.EMPLOYEE_ID
+AND E.DEPARTMENT_ID<>M.DEPARTMENT_ID;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="serif">
+        welcome to elzero web school, hello f
+    </div>
+    <div class="sans-serif">
+        welcome to elzero web school, hello f
+    </div>
+
+    <div class="new">
+        how to use it
+    </div>
+</body>
+</html>
+
+
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.sans-serif,
+.serif {
+    text-transform: capitalize;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.new {
+    text-align: center;
+    font-family: 'Tilt Prism';
+}
+
+
+
+
+Font Family : 
+    serif with l3iba and sans serif("F") font family;
+    we can import font families from google fonts;
+
+    

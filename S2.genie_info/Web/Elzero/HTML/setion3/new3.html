@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>new3</title>
+    </head>
+    <body>
+        <!--
+            <audio controls>
+            <source 
+            src="https://soundcloud.com/tatsumi-36904260/i-wanna-ride?si=e0e6961e69ed44a1962d5372f9752ad3&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" type="audio/mpeg">
+        </audio>
+        <hr>
+
+        <video controls width="400" height="200">
+            <source src="https://www.youtube.com/watch?v=qfPUMV9J5yw" type="video/mp4" poster="https://i.pinimg.com/originals/ec/1a/d5/ec1ad5aa416cc4fc6250201652467227.png">
+            your browser doesn't support it
+            <track src="myfile_en.vtt" kind="subtitles" srclang="en" label="english">
+        </video>
+        -->
+
+        <hr>
+
+        <form action="" method="get" novalidate>
+
+            <input type="hidden" value ="smail">
+            <div>
+                <label>Username</label>
+                <input type="text" required name="user" value="ismail" readonly>
+            </div>
+            <br>
+            <div>
+                <label>Subject</label>
+                <input type="text" name="sub" autofocus>
+            </div>
+            <br>
+            <div>
+            <label>Password</label>
+            <input type="password" required placeholder="write a complex password" name="pass" minlength="10" maxlength="20">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" required placeholder="Write a valid Email" value="a@jdjd.ma" disabled>
+            </div>
+            <br>
+            <div>
+                <label>Color</label>
+                <input type="color" >
+            </div>
+            <br>
+            <div>
+                <label>Range</label>
+                <input type="range" name="range" min="0" max="100" step="20" value="80">
+            </div>
+            <br>
+            <div>
+                <label for="num">Number</label>
+                <input id="num" type="number" name="number" min="0" max="100" step="10">
+            </div>
+            <hr>
+            <div>
+                <input id="lin" type="radio" name="os" value="linux">
+                <label for="lin">Linux</label>
+            </div>
+            <div>
+                <input id="win" type="radio" name="os" value="Windows" checked>
+                <label for="win">Windows</label>
+            </div>
+            <div>
+                <input id="mac" type="radio" name="os" value="Mac">
+                <label for="mac">Mac</label>
+            </div>
+            <hr>
+            <div>
+                <input id="lin1" type="checkbox" name="os" value="linux">
+                <label for="lin1">Linux</label>
+            </div>
+            <div>
+                <input id="win1" type="checkbox" name="os" value="Windows" checked>
+                <label for="win1">Windows</label>
+            </div>
+            <div>
+                <input id="mac1" type="checkbox" name="os" value="Mac">
+                <label for="mac1">Mac</label>
+            </div>
+            <hr>
+            <div>
+                <label for="book">Choose book</label>
+                <select name="book" id="book" >
+                    <optgroup label="super heros books">
+                        <option value="1">Book 1</option>
+                        <option value="2">Book 2</option>
+                        <option value="3">Book 3</option>
+                        <option value="4">Book 4</option>
+                    </optgroup>
+                    <optgroup label="police books">
+                        <option value="6">Book 6</option>
+                        <option value="7" selected>Book 7</option>
+                        <option value="8">Book 8</option>
+                        <option value="9">Book 9</option>
+                    </optgroup>
+                </select>
+            </div>
+            <hr>
+            <div>
+                <textarea name="subject" id="text" cols="40" rows="10" placeholder="insert text">
+                </textarea>
+            </div>
+            <hr>
+            <div>
+                <label for="">Upload</label>
+                <input type="file">
+            </div>
+            <hr>
+            <div>
+                <label for="">search</label>
+                <input type="search">
+            </div>
+            <hr>
+            <div>
+                <label for="">url</label>
+                <input type="url">
+            </div>
+            <hr>
+            <div>
+                <label for="">date</label>
+                <input type="date">
+            </div>
+            <hr>
+            <div>
+                <label for="">Month</label>
+                <input type="month">
+            </div>
+            <hr>
+            <div>
+                <label for="">time</label>
+                <input type="time">
+            </div>
+            <hr>
+            <div>
+                <label for="prog">programming Languages</label>
+                <input id="prog" list="programming" name="prog" >
+                <datalist id="programming">
+                    <option value="Python">
+                    <option value="C">
+                    <option value="Java">
+                    <option value="JS">
+                    <option value="C++">
+                    <option value="PHP">
+                    <option value="SQL">
+                </datalist>
+            </div>
+            <hr>
+            <br>
+            <input type="submit" value="save" >
+            <input type="reset">
+        </form>
+    </body>
+</html>
+
+

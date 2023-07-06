@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+</body>
+</html>
+
+div {
+    text-transform: capitalize;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: absolute;
+}
+
+.one {
+    background-color: red;
+    left: 20px;
+    top: 20px;
+    z-index: 3;
+}
+
+.two {
+    background-color: green;
+    left: 15px;
+    top: 15px;
+    z-index: 2;
+}
+
+.three {
+    background-color: blue;
+}
+
+
+
+Z-Index : 
+    it indicates the sence of layers ;
+    it considerates both of order in html ans in the z-index if 2 or more elements 
+    have the same value it takes or returns to the order in html ;
+    z-index doesn't work without position ;

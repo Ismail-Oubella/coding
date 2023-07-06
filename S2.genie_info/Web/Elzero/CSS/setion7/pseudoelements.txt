@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium omnis tempora hic quaerat quo neque quia asperiores incidunt, ullam est! Harum, officiis modi accusamus praesentium eveniet ratione quidem neque architecto.
+    </div>
+    <hr>
+    <div class="two">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolore tempore dicta unde odio similique aliquid aliquam rerum commodi velit nostrum saepe quidem dolorum, impedit eligendi, numquam inventore exercitationem quos.
+    </div>
+    <hr>
+    <div class="three">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet totam, repellat quia modi, voluptas itaque in nesciunt assumenda aliquam nisi eaque rem enim similique neque saepe laudantium praesentium necessitatibus. Nemo!
+    </div>
+    <p class="four">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempora obcaecati, enim exercitationem deleniti quas totam nostrum velit, nisi, cupiditate ratione reprehenderit laudantium omnis. Quae nostrum odit consequuntur sequi in!
+    </p>
+</body>
+</html>
+
+
+* {
+    text-transform: capitalize;
+}
+
+.two::first-letter {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.three::first-line {
+    font-weight: bold;
+    color: green;
+}
+
+.four::selection {
+    background-color: black;
+    color: yellow;
+}
+
+pseudo elements hh

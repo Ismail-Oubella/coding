@@ -1,0 +1,117 @@
+.Fah,
+.Cel {
+  align-items: center;
+  border: 0.5px solid;
+  height: fit-content;
+  padding: 12px;
+  margin: 12px;
+  border-radius: 13px;
+  width: 300px;
+}
+
+input {
+  height: 44px;
+  border: 2px solid;
+  border-radius: 12px;
+  margin-left: 8px;
+  font-weight: 700;
+  font-size: large;
+  width: 188px;
+  text-align: center;
+}
+label {
+  font-size: 1.3rem;
+  font-family: monospace;
+  border: 1px;
+  padding: 9px;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+}
+form {
+  border: 1px solid;
+  width: calc(818px - (818 * 0.4px));
+  margin: 187.9321px auto;
+  border-radius: 25px;
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  height: 621.34px;
+}
+h1 {
+  text-align: center;
+  font-family: monospace;
+  border: 1px;
+  margin: auto;
+  margin-top: 46px;
+  width: 344px;
+  height: fit-content;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  padding: 20px 0;
+}
+.container {
+  margin: auto;
+  width: 75%;
+  padding: 67.33105px;
+  text-align: center;
+}
+.tossawi {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.reset {
+  font-size: 1.3rem;
+  font-family: monospace;
+  border: 1px solid;
+  padding: 14px;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin-bottom: 12px;
+  width: 134px;
+  position: relative;
+}
+.reset:hover {
+  cursor: pointer;
+  color: rgb(91, 136, 136);
+  box-shadow: 0 0 12px #eceaea;
+}
+button::before,
+button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+button::before {
+  top: -5px;
+  left: -5px;
+}
+
+button::after {
+  bottom: -5px;
+  right: -5px;
+}
+
+button:hover {
+  background-color: #eceaea;
+}
+
+button:hover::before {
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-top-color: #322d2d;
+  border-left-color: #322d2d;
+  border-radius: 12px;
+}
+
+button:hover::after {
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-bottom-color: #322d2d;
+  border-right-color: #322d2d;
+  border-radius: 12px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="serif">
+        welcome to elzero web school, <span>hello</span> 
+    </div> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla soluta id veniam facilis! Esse, animi? Cumque eos quia totam tenetur molestias beatae dolorem blanditiis deleniti aliquam! Corrupti doloremque est nulla.</p>
+</body>
+</html>
+
+
+
+div {
+    /* text-transform: capitalize; */
+    /* font-style: italic; */
+    /* font-style: oblique; */
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+p {
+    text-transform: uppercase;
+}
+
+
+
+
+Typography - Font Style And Variant And Weight :
+
+    font-style and Variant  we don't use it ;
+    font-weight => bold
+
+
+
+

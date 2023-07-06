@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+    <h2>List of skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>
+            JS
+            <ul>
+                <li>React</li>
+                <li>Vue</li>
+                <li>Angular</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
+
+* {
+    text-transform: capitalize;
+}
+/* 
+li {
+    background-color: #eee;
+    margin-bottom: 10px;
+} */
+
+/* 
+ul {
+    list-style-image: url("//");
+    list-style-position: inside;
+
+} */
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+} 
+/* Reset ul */
+
+
+
+
+Lists styling : 
+    list-style-position : bullet position (inside or outside);
+    list-style-image : image as a bullet;
+
+    

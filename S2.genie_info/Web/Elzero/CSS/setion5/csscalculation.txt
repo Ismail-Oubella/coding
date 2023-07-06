@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <div>product one</div>
+        <div>product two</div>
+        <div>product three</div>
+        <div>product four</div>
+        <div>product five</div>
+    </body>
+</html>
+
+*{
+    text-transform: capitalize;
+}
+
+body {
+    margin: 0;
+}
+
+div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    width: calc((100% - 60px) / 5);
+    float: left;
+    /* margin-left: 1%; */
+    margin-left: 10px;
+}
+
+
+
+Master The CSS Calculation :
+    content width is 100%;
+    i want 5 spaces;
+    1% * 5 = 5% from content width;
+    95% available space;
+    4 Elemenets the width is : 95%/4 ;
+    
+    6 spaces ;
+    5 Elemenets => 94% available;
+    94%/5 is the width;
+
+    if 2% to every space ;
+    so 88% available space;
+    88% / 5 is the width;
+
+    we use calc() function;
+
+    content width is 100%;
+    i want 6 spaces;
+    15px * 6 = 90px from content width;
+    100%-90px available space;
+    4 Elemenets the width is : (100% - 90 px)/5 ;

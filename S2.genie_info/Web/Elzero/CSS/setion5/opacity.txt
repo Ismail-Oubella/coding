@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="one">element</div>
+        <div class="two">element</div>
+    </body>
+</html>
+
+* {
+    text-transform: capitalize;
+}
+
+.one {
+    background-color: red;
+    opacity: 0.5;
+}
+
+.two {
+    background-color: rgb(255, 0, 0,0.1);
+}
+
+
+we use opacity in the case when it appears a pannel and we make an oppacity of 0.5;

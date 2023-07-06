@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      #form,
+      .container {
+        width: 400px;
+        text-align: center;
+        margin: auto;
+        border: 1px solid;
+        padding: 25px;
+        margin-top: 10px;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      input[type="text"],
+      input[type="number"] {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+
+      #add {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      #form input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      #list li {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>List Of Students</h1>
+    <form class="container">
+      <label for="name">Name:</label>
+      <br />
+      <input type="text" id="name" /><br /><br />
+
+      <label for="age">Age:</label>
+      <br />
+      <input type="number" id="age" /><br /><br />
+
+      <input type="button" id="add" value="Add" />
+    </form>
+    <form id="form" action="resume.php" method="get">
+      <ul id="list"></ul>
+      <?php foreach ($students as $student) { ?>
+      <input type="hidden" name="name[]" value="<?= $student['name'] ?>" />
+      <input type="hidden" name="age[]" value="<?= $student['age'] ?>" />
+      <?php } ?>
+      <button type="button" id="submit">Submit</button>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>

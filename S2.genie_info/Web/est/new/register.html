@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Rental Site</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/banner.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 7%;
+        }
+
+        .logo {
+            width: 140px;
+            cursor: pointer;
+        }
+
+        .nav-links li {
+            list-style: none;
+            display: inline-block;
+            margin: 10px 30px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        
+
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        button.register-btn {
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .search-bar {
+            background-color: #fff;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            margin-top: 50px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .location-input {
+            display: flex;
+            align-items: center;
+        }
+
+        .location-input label {
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        .location-input input {
+            width: 400px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .search-bar label {
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        .search-bar input {
+            width: 200px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-right: 20px;
+        }
+
+        .search-bar button {
+            border: none;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .search-bar button img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <nav id="navBar">
+            <img src="images/logo.png" class="logo">
+            <ul class="nav-links">
+                <li><a href="#" class="active">Popular Places</a></li>
+                <li><a href="#">Travel Outside</a></li>
+                <li><a href="#">Online Packages</a></li>
+            </ul>
+
+            <a href="#" class="register-btn">Register Now</a>
+            <i class="fa fa-bars" onclick="togglebtn()"></i>
+        </nav>
+        <div class="registration">
+            <div class="container">
+                <h2>Register as a New User</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter a password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password"
+                            placeholder="Confirm your password">
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" placeholder="Enter your country">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" placeholder="Enter your city">
+                    </div>
+                    <button type="submit" class="register-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

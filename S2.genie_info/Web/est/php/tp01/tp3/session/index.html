@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inscription des étudiants</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        select {
+            width: 164px;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            display: block;
+        }
+
+        #email {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Gestion d'absence</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="inscription_module.html">Inscription des modules</a></li>
+            <li><a href="liste_etudiants_par_module.php">Liste des etudiants par module</a></li>
+            <li><a href="bilan_absence.php">Bilan d'absence</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Inscription des etudiants</h2>
+        <form action="main.php" method="post">
+            <label for="last_name">Nom :</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <label for="first_name">Prenom :</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="submit" name="submit">
+        </form>
+    </main>
+</body>
+
+</html>
+
+/*
+    presentation:
+        -motivation: besoins, solutions existe, sulotions proposes
+        -conception "partie base de donnes": mcd, diagramme de communication
+        -fonctionelle: explaiquer le fonctoinalité de solution
+        -demonstration: open site;
+        -conclure
+
+    rapport: partie ecrite de presentation 
+        -google slide, ppt
+            example of a page from presentation site:
+                page principale:
+                    *s'inscrire...
+        -partie ecrite
+            -
+
+*/

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .one {
+            background-color: #eee;
+            width: 200px;
+            height: 100px;
+            transition-duration: 0.5s;
+            transition-delay: 0.2s;
+            /* transition-property: all; default value all elements are under the effect of transition  
+  transition-property: width;
+  transition-timing-function: ease; ease = easy => low, fast, low  
+  transition-timing-function: linear; same speed
+  transition-timing-function: ease-in; start is slow
+  transition-timing-function: ease-out; end is slow
+  transition-timing-function: ease-in-out;  */
+            /* transition: width 3s, height 1s ; */
+            transition: all .5s 0.4s linear;
+            /*proprety, duration, delay, time-function*/
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .one:hover {
+            /* margin-left: 20px;
+    margin-top: 20px; */
+            width: 280px;
+            height: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">One</div>
+</body>
+
+</html>

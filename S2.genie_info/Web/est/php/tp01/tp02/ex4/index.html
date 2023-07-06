@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            .select select,
+            .radio input[type="radio"],
+            .distance input[type="number"] {
+                margin: 10px 0;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                font-size: 16px;
+                width: 200px;
+            }
+        
+            input[type="radio"] {
+                display: block;
+            }
+        
+            .select select:focus,
+            .radio input[type="radio"]:checked,
+            .distance input[type="number"]:focus {
+                outline: none;
+                border: 1px solid #0077b6;
+            }
+        
+            input[type="submit"] {
+                background-color: #0077b6;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: none;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        
+            input[type="submit"]:hover {
+                background-color: #023e8a;
+            }
+        
+            form {
+                width: 50%;
+                margin: auto;
+            }
+        </style>
+</head>
+<body>
+    <form action="main.php" method="get">
+        <div class="select">
+            <select name="city">
+                <option value="agadir">Agadir</option>
+                <option value="Taroudant">Taroudant</option>
+                <option value="Marrakech">Marrakech</option>
+            </select>
+        </div>
+        <div class="radio">
+            <input type="radio" name="type" value="Voiture">Voiture
+            <input type="radio" name="type" value="Bus">Bus
+            <input type="radio" name="type" value="Train">Train
+        </div>
+        <div class="distance">
+            <input type="number" name="distance" placeholder="Distance">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+* {
+    text-transform: capitalize;
+}
+
+.parent {
+    margin-bottom: 20px;
+    overflow: hidden;
+    counter-increment: counter;
+}
+
+.one {
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+}
+
+.user {
+    background-color: #eee;
+    width: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 55.5px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+}
+
+hr {     
+    margin: 20px 0;
+}
+
+.one::after {
+    content: counter(counter);   /* counter;*/
+    position: absolute;
+    background-color: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    right: -10px;
+    top: 50%;
+    margin-top: -10px;
+    /* position: absolute;
+    width: 5px;
+    height: 100%;
+    right: -10px;
+    top: 0;
+    background-color: rgb(67, 93, 117);
+    */
+
+}
+
+
+.one::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    background-color: white;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    /* border-color: red green blue black; */
+    border-color: transparent  rgb(67, 93, 117) transparent transparent;
+}
+
+/* .one .pipeline {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    right: -10px;
+    top: 0;
+    background-color: green;
+} */
+

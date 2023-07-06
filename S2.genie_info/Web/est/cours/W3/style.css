@@ -1,0 +1,113 @@
+.a {
+    background-color: brown;
+    width: 50%; 
+    margin: 50px;
+    padding: 30px;
+    border: black 5px solid;
+    outline: 3px solid blue;
+    /* position: fixed; */
+    bottom: 0px;
+    right : 0px;
+}
+
+.b {
+    background-color: brown;
+    width: 50%; 
+    margin: 50px;
+    padding: 30px;
+    border: black 5px solid;
+    outline: 3px solid blue;
+    position: sticky;
+    top: 0px;
+    right : 0px;
+}
+
+.c {
+    background-color: brown;
+    width: 50%; 
+    margin: 50px;
+    padding: 30px;
+    border: black 5px solid;
+    outline: 3px solid blue;
+    /* position: absolute;
+    bottom: 0px;
+    right : 0px; */
+}
+
+.d {
+    background-color: brown;
+    width: 50%; 
+    margin: 50px;
+    padding: 30px;
+    border: black 5px solid;
+    outline: 3px solid blue;
+    /* position: absolute;
+    bottom: 0px;
+    right : 0px; */
+}
+
+.f {
+    background-color: brown;
+    width: 50%; 
+    margin: 50px;
+    padding: 30px;
+    border: black 5px solid;
+    outline: 3px solid blue;
+    /* position: absolute;
+    bottom: 0px;
+    right : 0px; */
+}
+
+.g {
+    background-color: brown;
+    width: 50%; 
+    margin: 50px;
+    padding: 30px;
+    border: black 5px solid;
+    outline: 3px solid blue;
+    /* position: absolute;
+    bottom: 0px;
+    right : 0px; */
+}
+
+p {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    /* visibility: inherit;  ==   display: none;  */
+}
+
+img {
+    float: left;;
+}
+
+a:link {
+    color: black;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: blue;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: red;
+  }
+  
+  /* selected link */
+
+/*  margin outside  padding inside
+    box model
+    outline;
+    static => not effective by position attribute;
+    position properties
+    float property
+*/
+

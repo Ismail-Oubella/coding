@@ -1,0 +1,16 @@
+* {
+    background-color: aliceblue;
+}
+
+div{
+    margin-bottom:50px ;
+}
+
+input.op ,textarea {
+    margin-left: 200px;
+}
+
+h1{
+    text-align: center;
+}
+

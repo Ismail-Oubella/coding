@@ -1,0 +1,22 @@
+Position : 
+    static => default;
+    relative => it's relative to his initial position;
+    absolute => makes the element out of the flow or page and his relative position is 
+                the page itself or the parent element but this parent element have to 
+                take the relative position to that it will be relative to the element 
+                thet we want change his position ok ?;
+    fixed => fixed position;
+    stycky => it still scroll until down of the page with setting the position;
+
+Z-Index : 
+    it indicates the sence of layers ;
+    it considerates both of order in html ans in the z-index if 2 or more elements 
+    have the same value it takes or returns to the order in html ;
+    z-index doesn't work without position ;
+ 
+Lists styling : 
+    list-style-position : bullet position (inside or outside);
+    list-style-image : image as a bullet;
+
+Table styling :
+    

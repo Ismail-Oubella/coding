@@ -1,0 +1,190 @@
+Semantic Elements
+
+<!--
+    header =>  head of wesite
+    nav => navigation bar 
+    section => the content of the website all is inside it/defines a section in a document.
+    aside => side bar
+    footer => footer of the page
+    main=> specifies the main content of a document.
+    picture => gives web developers more flexibility in specifying image resources.
+
+    they are div but with a name that give it's purpose instead of using 
+    a lot of classes
+    footer and header can be used more than once in a page
+    theire is only one side bar in page
+    
+    insted of 
+        <div>
+            <img src="" alt="">
+            <p></p>
+        </div>
+
+    we can use :
+
+    figure => that give us the possiblity of upload an image with caption instead 
+    of using div continer
+    figcaption => caption 
+        <figure>
+            <img src="" alt="">
+            <figcaption></figcaption>
+        </figure>
+
+    all  this is to avoid this :
+
+    <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+-->
+
+Audio/Video : 
+
+<!--
+    audio have src attribute we can use source tag inside it wich is better to use 
+    source tag have also src attribute and type every type have an "MME type " for example
+    mp3 audio => audio/mpeg and we do a lot of source attribute to that if the browser 
+    doesn't support one it find the other but now all browsers support .mp3 so 
+    use it with MME type audio/mpeg
+    <audio controls>
+        <source 
+        src=".mp3" type="audio/mpeg">
+        your browser doesn't support audio rags
+    </audio>
+
+    inside audio tag can play the role of alt attribute 
+
+    audio tag have attributes :
+        controls => that shows pause/rsum and all buttons ;
+        autoplay => autoplay audio / Chrome doesn't support it anymore but edge still;
+        loop ;
+        muted;
+
+
+    it the same for video tag; just use mp4 extension 'video/mp4' we can use 
+    width and height attributes
+
+    but video have his attributes :
+        poster => that shows img;
+        track => is to translation it have src , kind ,srclang ,label.... attributes;
+
+        preload=>attribute specifies if and how the author thinks that the video 
+                should be loaded when the page loads.(auto,metadata,none)
+
+                The preload attribute is ignored if autoplay is present.
+-->
+
+
+Form :
+
+<!--
+    part 1:
+
+    the form element contains some of form editable to send it to a server;
+    inside it theire are :
+
+        label => the name
+
+        input => inline block self closing tag it give us choice to write 
+        in fields ...
+        it have some attributes:
+            type => text , password ,submit 
+
+    part 2:
+
+        required => attribute that must have written in the field 
+        placeholder =>  specifies a short hint that describes 
+        the expected value of an input field
+
+        type is very important ;
+
+    part 3 :
+
+    action attribute in form name="email" required placeholder="Write a valid Email" value="a@jdjd.ma"element
+        action => specifies where to send the form-data when a form is submitted.
+        method =>  specifies how to send form-data (get => send data in the url (google search) != post doesn't show it )
+        
+    part 4:
+
+    input types :
+
+        hidden => we use it also to send data that it's not necessary that the user 
+                    se it (id ...)
+        reset => reset the form
+        Color => set a color
+        range => set a range it has attributes min max also set and value that set 
+                    the initial value ;
+        Number => only numbers also it has min and max step;
+
+    part 5:
+
+        readonly => like username it can be unchanged (in some cases)
+        disabled => unchanged and olso it unsended 
+        autofocus => autofocus in a field
+        minlength => set the minimum number of characters in a field
+        maxlength => set the maximum number of characters in a field
+
+    part 6 :
+
+    input types :
+        radio => Only one radio button in a group can be selected at the same time.
+        checkbox => Checkboxes are used to let a user select one or more options of a limited number of choices.
+
+        for => attribute in label tag give us the access to connect it with the 
+                    input by give it an id setted before in the input using id 
+                    attribute
+
+    part 7 :
+
+        select => Select from a list hidden by default;
+        option => Options to select ; have an value attribute that will be sended 
+                    not the text;
+
+        optgroup =>  is used to group related options in a <select> 
+            element (drop-down list),   and has the atribute label , multiple attributes
+            that give the choise to select more than one option(inside select) , selected attribute
+            just like autofocus option it appers rather than the order of the list(inside option);
+
+        
+        textarea =>  defines a multi-line text input control.
+
+    part 8 :
+
+    input types :
+            
+        file => defines a file-select field and a "Browse" button for file uploads.
+        search => defines a text field for entering a search string.
+        url => only url can be sent
+        date => choose date format;
+        month /time => choose month format/time 
+
+    part 9 :
+
+            novalidate => form can be submitted without validation(form attribute)
+            target => same one before (form attribute), its benificial in test cases
+            
+            to create a list like select tag but by input we use the datalist tag
+            with option inside it and link the datalist with the input by an id that 
+            named list inside input and id in the datalist but this list give us the 
+            choise to search through the list;
+-->
+
+
+
+        
+
+
+
+
+
+
+

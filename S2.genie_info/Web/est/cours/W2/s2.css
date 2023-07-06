@@ -1,0 +1,17 @@
+* {
+    font-style: oblique;
+}
+
+
+
+p.dotted{
+    border : 2px solid red;
+    border-radius: 5px;
+}
+
+.circle {
+    background-color: black;
+    border-radius: 10 px;
+    border-spacing: 20px;
+    border-style: solid;
+}

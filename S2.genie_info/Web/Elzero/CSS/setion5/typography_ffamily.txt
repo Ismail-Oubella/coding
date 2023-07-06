@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="serif">
+        welcome to elzero web school, <span>hello</span> 
+    </div>
+    <!-- <div class="sans-serif">
+        welcome to elzero web school, hello f
+    </div>
+
+    <div class="new">
+        how to use it
+    </div> -->
+</body>
+</html>
+
+
+
+div {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+
+Typography - Font Family :
+
+    CSS Units :
+        -px;
+        -em => Time
+        -rem=> Root Time; root element is html;
+        -pourcentage;
+        -vw => ViewPort Width
+
+        REad about => vh & vmin;
+
+
+
+

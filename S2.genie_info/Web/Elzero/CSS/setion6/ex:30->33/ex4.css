@@ -1,0 +1,46 @@
+* {
+    text-transform: capitalize;
+}
+
+
+td {
+    border: 1px solid white;
+}
+
+
+table {
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-spacing: 0px;
+    background-color: #eee;
+    border-bottom-color: green;
+}
+
+table thead td{
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 15px 20px;
+}
+
+div {
+    display: inline-block;
+}
+
+.view button{
+    margin: 15px 0px 15px 10px;
+    background-color:cornflowerblue;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+.delete button{
+    margin: 15px 10px 15px 0px;
+    background-color: tomato;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+}

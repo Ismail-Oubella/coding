@@ -1,0 +1,20 @@
+form,
+li {
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    height: 40px;
+    width : 50% ;
+}
+
+button {
+    margin-left: 20px;
+    height: 40px;
+}
+
+li {
+    list-style: none;
+}

@@ -1,0 +1,141 @@
+Name of club : Chelsea
+prName of coach : Graham
+Name of coach : Potter
+Name of stadiuem : Stamford_Bridge  
+yyyy : 1905
+Pre of player : Edouard
+Name of player : Mendy
+Nationality : Senegal
+Position : Goalkeeper
+Date of Birth (dd/MM/yyyy): 
+dd : 1       
+MM : 3
+yyyy : 1992
+length : 194
+Number : 16
+Pre of player : Thiago
+Name of player : Silva
+Nationality : Brazil
+Position : Defender
+Date of Birth (dd/MM/yyyy): 
+dd : 22
+MM : 9
+yyyy : 1984
+length : 183
+Number : 6
+Pre of player : Kalidou
+Name of player : Koulibaly
+Nationality : Senegal
+Position : Defender
+Date of Birth (dd/MM/yyyy): 
+dd : 20
+MM : 6
+yyyy : 1991
+length : 195
+Number : 26
+Pre of player : Reece
+Name of player : James
+Nationality : England
+Position : Defender
+Date of Birth (dd/MM/yyyy): 
+dd : 8
+MM : 12
+yyyy : 1999
+length : 182
+Number : 24
+Pre of player : Marc
+Name of player : Cucurella
+Nationality : Spain
+Position : Defender
+Date of Birth (dd/MM/yyyy): 
+dd : 22
+MM : 7
+yyyy : 1998
+length : 172
+Number : 32
+Pre of player : Ngolo
+Name of player : Kante
+Nationality : France
+Position : Midfielder
+Date of Birth (dd/MM/yyyy): 
+dd : 29
+MM : 3
+yyyy : 1991
+length : 168
+Number : 7
+Pre of player : Mateo
+Name of player : Kovacic
+Nationality : Croatia
+Position : Midfielder
+Date of Birth (dd/MM/yyyy): 
+dd : 6
+MM : 5
+yyyy : 1994
+length : 177
+Number : 8
+Pre of player : Mason
+Name of player : Mount
+Nationality : England
+Position : Midfielder
+Date of Birth (dd/MM/yyyy): 
+dd : 10
+MM : 1
+yyyy : 1999
+length : 181
+Number : 19
+Pre of player : Hakim 
+Name of player : Ziyech
+Nationality : Morocco 
+Position : Forward   
+Date of Birth (dd/MM/yyyy): 
+dd : 19
+MM : 3
+yyyy : 1993
+length : 180
+Number : 22
+Pre of player : Pierre
+Name of player : Auba
+Nationality : Gabon
+Position : Forward
+Date of Birth (dd/MM/yyyy): 
+dd : 18
+MM : 6
+yyyy : 1989
+length : 186
+Number : 9
+Pre of player : Kai
+Name of player : Havertz
+Nationality : Germany
+Position : Forward
+Date of Birth (dd/MM/yyyy): 
+dd : 11
+MM : 6
+yyyy : 1999
+length : 193
+Number : 29
+Pre of player : Kepa
+Name of player : Arrizabalaga 
+Nationality : Spain
+Position : Goalkeeper
+Date of Birth (dd/MM/yyyy): 
+dd : 3
+MM : 10
+yyyy : 199
+yyyy : 1994
+length : 189
+Number : 1
+Pre of player : Trevoh
+Name of player : Chalobah
+Nationality : Englan
+Position : Defender
+Date of Birth (dd/MM/yyyy): 
+dd : 5
+MM : 7
+yyyy : 1999
+length : 190
+Number : 2
+Pre of player : Christian 
+Name of player : Pulisic
+Nationality : USA
+Position : Midfielder
+Date of Birth (dd/MM/yyyy): 

@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "limits": "c",
+        "ex02_tp7.C": "cpp"
+    }
+}

@@ -1,0 +1,20 @@
+.special {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+p {
+    color: rgb(0, 0, 0);
+}
+
+div {
+    background-color: aqua;
+    background-color: rgb(255,255,200);
+    background-color: #762345;
+    background-image: url("/kaido.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: 100px 200px;
+} 
+

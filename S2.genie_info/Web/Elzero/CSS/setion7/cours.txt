@@ -1,0 +1,4 @@
+pseudu classes we can say that they are feke classes ;
+there is a lot like "focus, hover, checked, empty, visited...."
+
+pseudo elements hh

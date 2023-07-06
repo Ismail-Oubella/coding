@@ -1,0 +1,5 @@
+div {
+    background-color: white;
+    margin: 20px auto;
+    text-shadow : 0.5px 0.5px 0px red,1px 1px 0px blue;    
+}

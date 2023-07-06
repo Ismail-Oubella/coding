@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+</head>
+
+<body>
+    <h1>Store</h1>
+    <form action="main.php" method="post">
+        <label for="item1">book 1</label>
+        <input type="checkbox" name="item[]" id="item1" value="book 1">
+        <label for="item2">book 2</label>
+        <input type="checkbox" name="item[]" id="item2" value="book 2">
+        <label for="item3">book 3</label>
+        <input type="checkbox" name="item[]" id="item3" value="book 3">
+        <label for="item4">book 4</label>
+        <input type="checkbox" name="item[]" id="item4" value="book 4">
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
